@@ -108,11 +108,11 @@ InstallNginx () {
     echo "Found https config, running certbot dry run..."
 
     echo "[CERTBOT DRY RUN]"
-    RunCertbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d $DOMAIN
+    RunCertbot certonly --agree-tos --webroot --webroot-path /var/www/certbot/ --dry-run -d $DOMAIN
     read -p "Press enter if the dry run was successful, [Ctrl+C] if not."
         
     echo "[CERTBOT INSTALL]"
-    RunCertbot certonly -n --webroot --webroot-path /var/www/certbot/ -d $DOMAIN
+    RunCertbot certonly --agree-tos -n --webroot --webroot-path /var/www/certbot/ -d $DOMAIN
     read -p "Press enter if the cert creation was successful, [Ctrl+C] if not."
         
     echo "[NGINX HTTPS CONFIG]"

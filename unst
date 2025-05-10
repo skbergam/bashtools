@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 THISDIR="$( cd "$(dirname "$( readlink -f ${BASH_SOURCE[0]} )")" >/dev/null 2>&1 && pwd)"
 # echo "THISDIR $THISDIR"
 
-source "$THISDIR/commands.bash"
+source "$THISDIR/commands.sh"
 
 CMD=$1
 
