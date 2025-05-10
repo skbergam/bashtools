@@ -1,6 +1,6 @@
 They should be installed in the .bashtools folder with these commands:
 ```
-git clone https://gist.github.com/d1bde0625c185fdfceb16a6602e9fb3e.git ~/.bashtools # This clones the gist where it belongs.
+git clone git@github.com:skbergam/bashtools.git ~/.bashtools # Clone the repo where it belongs.
 bash ~/.bashtools/install_tools.sh # This installs it into ~/.bash_profile.
 ```
 
